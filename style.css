@@ -344,6 +344,7 @@ p{
 	background-color: #35bd24;
 	height: 12rem;
 	width: 12rem;
+	
 }
 
 .section-3-box2 {
@@ -370,6 +371,12 @@ p{
 	bottom: 5.5rem;
 	left: 6.5rem;
 
+}
+.section-3-ptag-1 p{
+	font-size: .9rem;
+}
+.section-3-ptag-2 p{
+	font-size: .9rem;
 }
 
 .section-3-ptag-1 {
@@ -499,6 +506,7 @@ p{
 .section-4-card-text p {
 	margin: 1rem;
 	color: #5d5d5d;
+	font-size: .7rem;
 }
 
 .section-4-card-text a {
@@ -679,6 +687,7 @@ p{
 .section-6-card-text p {
 	margin: 1rem;
 	color: #5d5d5d;
+	font-size: .7rem;
 }
 
 .section-6-card-text .p1 {
@@ -1398,4 +1407,9 @@ footer {
 	border: 0.1rem solid #f38b15;
 }
 /* -----------------------Author Section End--------------------------------- */
+
+
+
+
+
 
