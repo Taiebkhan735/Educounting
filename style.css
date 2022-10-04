@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -7,17 +11,19 @@
 body {
 	width: 91.875rem;
 	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
 }
-
+p{
+	font-weight: 300;
+}
 .header-main {
-	background-image: url(images/Hero\ area-Banner-img.jpg);
+	background-image: url(../images/Banner-img.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .nav-bar {
-	height: 3rem;
-	width: 100%;
+	height: 6rem;
 	background-color: transparent;
 	padding-left: 15rem;
 	padding-right: 15rem;
@@ -32,17 +38,23 @@ body {
 .nav-bar-main-content {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
 #nav-items {
 	flex: 2 1 auto;
 }
-
 .nav-btn {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-end;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 1rem;
+	width: 2rem;
 }
 
 .nav-bar img {
@@ -70,14 +82,7 @@ body {
 	
 }
 
-.nav-btn {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	margin-top: 1rem;
-}
+
 
 .nav-btn button {
 	background-color: #f38b15;
@@ -258,7 +263,7 @@ body {
 .section-2 {
 	background: linear-gradient(rgba(16, 72, 83, 0.716),
 			rgba(3, 38, 39, 0.526)),
-		url(images/section-2.jpg);
+		url(../images/section-2.jpg);
 	height: 25rem;
 	background-repeat: no-repeat;
 	margin-bottom: 5rem;
@@ -1000,7 +1005,7 @@ footer {
 .footer-section {
 	background: linear-gradient(rgba(38, 105, 120, 0.674),
 			rgba(38, 105, 120, 0.649)),
-		url(images/footer\ copy.jpg);
+		url(../images/footer\ copy.png);
 }
 
 .footer_container {
@@ -1147,3 +1152,250 @@ footer {
 
 
 /* -----------------------Privacy section end --------------------------------- */
+
+
+
+
+
+/* =============================Blog-Page=================================== */
+
+
+/* -----------------------Header Section--------------------------------- */
+
+.blog-header-main{
+	background: rgb(241, 248, 234);
+
+}
+.header-container{
+	
+
+}
+.blog-header-child-container{
+	display: flex;
+	margin-top: 3rem;
+	padding-bottom: 5rem;
+	margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.blog-header-text p{
+	font-size: 2rem;
+	font-weight: 600;
+
+}
+.blog-header-text{
+	background: white;
+	/* margin-left: 14.8rem; */
+	padding-top: 2rem;
+	padding-left: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	height: 20rem;
+	width: 38.6rem;
+}
+.blog-header-author{
+	margin-top: 9rem;
+
+}
+.blog-header-author span{
+	color: #f38b15;
+	font-size: 1rem;
+	margin-left: .4rem;
+}
+
+.blog-header-img img{
+	width: 23.25rem;
+	height: 20rem;
+}
+/* -----------------------Header Section End--------------------------------- */
+
+
+
+/* -----------------------blog Section--------------------------------- */
+
+.Blog-section-1{
+	margin-left: 15rem;
+    margin-right: 15rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.Blog-section-1 .all-blog{
+	width:45rem;
+	padding-right: 3rem;
+	margin-top: 3rem;
+}
+.Blog-section-1 h3{
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
+.blog-section-DDmenu{
+	width:17rem;
+	background: #e6e2e7 ;
+	margin-top: 3rem;
+}
+.blog-section-DDmenu ul a{
+	list-style-type: none;
+	margin-left: 1rem;
+	text-decoration: none;
+}
+.blog-section-DDmenu ul a li{
+	margin-left: 1rem;
+	color: #545b53;
+	text-decoration: none;
+	font-weight: 300;
+}
+.blog-section-DDmenu ul a li span{
+	padding:0rem .5rem;
+	margin-right: .3rem;
+	background: #42aae6;
+	text-align: center;
+	color: white;
+	font-weight: 600;
+}
+
+.blog-section-1-tbl{
+	display: flex;
+}
+.fa {
+	font-size:1.5rem;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+.all-blog img{
+	width: 38rem;
+	height: 20rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.social-icon{
+	margin: 2rem 0rem;
+}
+.social-icon span{
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-right: 2rem;
+}
+.social-icon a{
+	font-size: 1.5rem;
+	margin-right: .5rem;
+}
+#icon-fb{
+	color: #0d5b88;
+}
+#icon-fb:hover{
+	color: #1f3f52;
+}
+#icon-twt{
+	color: #2a97d7;
+}
+#icon-twt:hover{
+	color: #147cb8;
+}
+#icon-lin{
+	color: #0f80c1;
+}
+#icon-lin:hover{
+	color: #075989;
+}
+/* -----------------------blog Section End--------------------------------- */
+
+
+/* -----------------------Author Section-------------------------------- */
+.author-section{
+	background: #e9f3f5;
+	height: 26rem;
+}
+.author-section-container{
+	margin-left: 15rem;
+	margin-right: 15rem;
+	
+}
+.about-aauthor{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-top: 2rem;
+}
+.about-aauthor img{
+	width: 8rem;
+	height: 8rem;
+}
+.author-text{
+	margin-left: 2rem;
+	width: 40rem;
+}
+.author-text h3{
+	font-size: 1rem;
+	margin-bottom: .7rem;
+}
+.author-text p{
+	font-size: .7rem;
+}
+
+
+
+.author-text a button {
+	padding: 0.7rem 1.3rem;
+	color: white;
+	background-color: #00aeef;
+	border: none;
+	border-radius: 1rem;
+	cursor: pointer;
+	margin-top: 1rem;
+	font-size: .5rem;
+	transition: all .5s linear;
+}
+
+.author-text a button:hover {
+	padding: 0.6rem 1.2rem;
+	color: #00aeef;
+	background-color: transparent;
+	border: 0.1rem #00aeef solid;
+	border-radius: 1rem;
+}
+
+
+.search-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.search-section h3 {
+	margin: 1.5rem;
+}
+.search-section input {
+	padding-left: 2rem;
+	height: 2rem;
+	width: 20rem;
+	border: none;
+	outline: none;
+	font-size: 0.6rem;
+}
+.search-section p {
+	margin-top: 2rem;
+	font-weight: 500;
+}
+
+.search-section button {
+	background-color: #f38b15;
+	border: .1rem #f38b15 solid;
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.6rem;
+	margin-top: 1rem;
+	padding: 0.7rem 2rem;
+	transition: all 300ms linear;
+	cursor: pointer;
+}
+
+.search-section button:hover {
+	background: transparent;
+	color: #f38b15;
+	border: 0.1rem solid #f38b15;
+}
+/* -----------------------Author Section End--------------------------------- */
+
