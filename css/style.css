@@ -1158,7 +1158,6 @@ footer {
 
 .privacy-sec {
 	background-color: rgb(101, 184, 31);
-	/* background-color: rgb(103, 179, 37); */
 	width: auto;
 	height: 3.5rem;
 	display: flex;
@@ -1182,7 +1181,6 @@ footer {
 
 .blog-header-main{
 	background: rgb(241, 248, 234);
-
 }
 .blog-header-child-container{
 	display: flex;
@@ -1224,9 +1222,9 @@ footer {
 
 
 
-/* -----------------------blog Section start--------------------------------- */
+/* ------------------------------blog Section start--------------------------------- */
 
-/* -----------------------Table Of Content Section Start--------------------------------- */
+     /* -----------------------Table Of Content Section Start--------------------------------- */
 
 .blog-section-DDmenu{
 	width:17rem;
@@ -1248,14 +1246,19 @@ footer {
 	text-decoration: none;
 	font-weight: 300;
 	font-size: .7rem;
+	display: flex;
+	
 }
-.blog-link-section ul a li span{
-	padding:0rem .5rem;
-	margin-right: .3rem;
+.blog-link-section ul a li span p{
+	padding-top: .1rem;
+	height: 1rem;
+	width: 1.5rem;
 	background: #42aae6;
 	text-align: center;
 	color: white;
 	font-weight: 600;
+	margin-right: .5rem;
+
 }
 
 .blog-section-1-tbl{
@@ -1265,6 +1268,11 @@ footer {
 	font-size:1.5rem;
 	margin-left: 1rem;
 	margin-top: 1rem;
+	color: #323b40;
+    cursor: pointer;
+}
+.fa:hover {
+	color: #42aae6;;
 }
 /* -----------------------Table Of Content Section End--------------------------------- */
 
@@ -1496,8 +1504,6 @@ footer {
 	justify-content: center;
 	align-items: center;
 	margin-top: 5rem;
-	
-
 }
 
 .main-h {
