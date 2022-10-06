@@ -1012,8 +1012,8 @@ footer {
 }
 
 .footer-section {
-	background: linear-gradient(rgba(38, 105, 120, 0.674),
-			rgba(38, 105, 120, 0.649)),
+	background: linear-gradient(rgba(34, 151, 172, 0.82),
+			rgba(34, 135, 172, 0.82)),
 		url(../images/footer\ copy.png);
 }
 
@@ -1024,7 +1024,7 @@ footer {
 	align-items: flex-start;
 	gap: 9rem;
 	padding-top: 5rem;
-	height: 20rem;
+	height: 30rem;
 }
 
 .footer-logo {
@@ -1033,6 +1033,7 @@ footer {
 	justify-content: center;
 	align-items: flex-start;
 	width: 13rem;
+	margin-top: 5rem;
 
 }
 
@@ -1083,6 +1084,16 @@ footer {
 	transition: transform 1s;
 }
 
+.footer_sec-2 {
+	margin-top: 5rem;
+	height: 10rem;
+}
+.footer_sec-3 {
+	margin-top: 5rem;
+}
+.footer_sec-4 {
+	margin-top: 5rem;
+}
 .footer_sec-2 h3 {
 	margin-bottom: 1rem;
 }
@@ -1096,35 +1107,33 @@ footer {
 }
 
 .footer_sec-2 a p {
-	margin-top: .5rem;
+	margin-top: 1rem;
 	font-size: .7rem;
 }
 .footer_sec-2 a p:hover {
-	margin-top: .5rem;
 	color: #f38b15;
 }
 
 .footer_sec-3 a p {
-	margin-top: .5rem;
+	margin-top: 1rem;
 	font-size: .7rem;
 }
 .footer_sec-3 a p:hover {
-	margin-top: .5rem;
 	color: #f38b15;
 }
 
 .footer_sec-4 a p {
-	margin-top: .5rem;
+	margin-top: 1rem;
 	font-size: .7rem;
 }
 .footer_sec-4 a p:hover {
-	margin-top: .5rem;
 	color: #f38b15;
 }
 
 .footer_sec-2 a {
 	text-decoration: none;
 	color: white;
+	
 }
 
 .footer_sec-3 a {
@@ -1222,7 +1231,107 @@ footer {
 
 
 
-/* -----------------------blog Section--------------------------------- */
+/* -----------------------blog Section start--------------------------------- */
+
+/* -----------------------Table Of Content Section Start--------------------------------- */
+
+.blog-section-DDmenu{
+	width:17rem;
+	margin-top: 3rem;
+}
+.blog-link-section{
+	width:17rem;
+	background:#ebebeb;
+	padding-bottom: 1.5rem;
+}
+.blog-link-section ul a{
+	list-style-type: none;
+	margin-left: 1rem;
+	text-decoration: none;
+}
+.blog-link-section ul a li{
+	margin-left: 1rem;
+	color: #545b53;
+	text-decoration: none;
+	font-weight: 300;
+	font-size: .7rem;
+}
+.blog-link-section ul a li span{
+	padding:0rem .5rem;
+	margin-right: .3rem;
+	background: #42aae6;
+	text-align: center;
+	color: white;
+	font-weight: 600;
+}
+
+.blog-section-1-tbl{
+	display: flex;
+}
+.fa {
+	font-size:1.5rem;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+/* -----------------------Table Of Content Section End--------------------------------- */
+
+/* -----------------------Latest Blog Section start --------------------------------- */
+
+.latest-blog-main-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 2rem;
+	background:#ebebeb ;
+}
+.latest-blog-main-container h3{
+	margin:1rem 1rem;
+}
+.latest-blog-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* margin-top: 2rem; */
+}
+.blog-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+}
+.blog-box img{
+	height: 3rem;
+	width: 3rem;
+
+}
+.latest-blog-text-section{
+	margin-left: .5rem;
+}
+.latest-blog-text-section h5{
+	font-size: .7rem;
+}
+.latest-blog-text-section a p{
+	font-size: .7rem;
+	margin-top: .55rem;
+	font-weight: 500;
+	color: #f38b15;
+}
+.latest-blog-text-section a{
+	text-decoration: none;
+}
+
+
+
+/* -----------------------Latest Blog Section End--------------------------------- */
+
+
+
+/* ----------------------Blog section All Article------------------------------------------------ */
+
 
 .Blog-section-1{
 	margin-left: 15rem;
@@ -1240,39 +1349,10 @@ footer {
 	margin-top: 1rem;
 	margin-left: 1rem;
 }
-.blog-section-DDmenu{
-	width:17rem;
-	background: #e6e2e7 ;
-	margin-top: 3rem;
-}
-.blog-section-DDmenu ul a{
-	list-style-type: none;
-	margin-left: 1rem;
-	text-decoration: none;
-}
-.blog-section-DDmenu ul a li{
-	margin-left: 1rem;
-	color: #545b53;
-	text-decoration: none;
-	font-weight: 300;
-}
-.blog-section-DDmenu ul a li span{
-	padding:0rem .5rem;
-	margin-right: .3rem;
-	background: #42aae6;
-	text-align: center;
-	color: white;
-	font-weight: 600;
+.all-blog p{
+	font-size: .8rem;
 }
 
-.blog-section-1-tbl{
-	display: flex;
-}
-.fa {
-	font-size:1.5rem;
-	margin-left: 1rem;
-	margin-top: 1rem;
-}
 .all-blog img{
 	width: 38rem;
 	height: 20rem;
@@ -1309,12 +1389,15 @@ footer {
 #icon-lin:hover{
 	color: #075989;
 }
-/* -----------------------blog Section End--------------------------------- */
 
 
-/* -----------------------Author Section-------------------------------- */
+/* ----------------------Blog section All Article End------------------------------------------------ */
+
+/* -----------------------   blog Section End--------------------------------- */
+
+
+/* -----------------------Author Section Start-------------------------------- */
 .author-section{
-	background: #e9f3f5;
 	height: 26rem;
 }
 .author-section-container{
@@ -1407,6 +1490,98 @@ footer {
 	border: 0.1rem solid #f38b15;
 }
 /* -----------------------Author Section End--------------------------------- */
+
+
+
+/* -----------------------Related Post Section Start --------------------------------- */
+
+.related-post-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5rem;
+	
+
+}
+
+.main-h {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.related-post-card-main-container {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 35rem;
+}
+
+.related-post-card-container {
+	height: 25rem;
+	width: 17.7rem;
+	margin: 1rem 1rem;
+	background-color: white;
+	box-shadow: .2rem .1rem .6rem .1rem #d7d7d7;
+	transition: all 500ms linear;
+	cursor: pointer;
+}
+
+.related-post-card-container:hover{
+	transform: translateY(-5%);
+}
+
+.related-post-card-text {
+	height: 25rem;
+	width: 18.7rem;
+}
+.related-post-card-text_container{
+	width: 16.7rem;
+	height: 9rem;
+}
+.related-post-card-text img {
+	height: 13rem;
+	width: 17.7rem;
+}
+
+.related-post-card-text h4 {
+	margin: 1rem 1rem;
+}
+
+.related-post-card-text p {
+	margin-left: 1rem;
+	margin-bottom: .8rem;
+	color: #5d5d5d;
+	font-size: .7rem;
+}
+
+.related-post-card-text a {
+	margin-left: 1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #f38b15;
+	font-size: .7rem;
+}
+
+.related-post-card-text a:hover {
+	margin-left: 1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #8a4c06;
+	font-size: .7rem;
+}
+
+.related-post-all-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 90rem;
+}
+
+/* -----------------------Related Post Section End--------------------------------- */
 
 
 
