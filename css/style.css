@@ -50,7 +50,7 @@ p{
 .nav-btn {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 	gap: 1rem;
 	margin-top: 1rem;
@@ -87,10 +87,10 @@ p{
 .nav-btn button {
 	background-color: #f38b15;
 	height: 2rem;
-	font-size: 0.7rem;
+	font-size: 0.6rem;
 	color: #ffffff;
 	border: none;
-	width: 9rem;
+	width: 7rem;
 	border-radius: 1.6rem;
 	text-transform: uppercase;
 	transition: all 300ms linear;
@@ -1197,13 +1197,13 @@ footer {
 }
 
 .blog-header-text p{
-	font-size: 2rem;
+	font-size: 2.5rem;
 	font-weight: 600;
-
+	padding-bottom: 5rem;
+	padding-top: 4rem;
 }
 .blog-header-text{
 	background: white;
-	/* margin-left: 14.8rem; */
 	padding-top: 2rem;
 	padding-left: 2rem;
 	display: flex;
@@ -1213,10 +1213,7 @@ footer {
 	height: 20rem;
 	width: 38.6rem;
 }
-.blog-header-author{
-	margin-top: 9rem;
 
-}
 .blog-header-author span{
 	color: #f38b15;
 	font-size: 1rem;
@@ -1312,12 +1309,13 @@ footer {
 	margin-left: .5rem;
 }
 .latest-blog-text-section h5{
-	font-size: .7rem;
+	font-size: .6rem;
+	height: 2.3rem;
 }
 .latest-blog-text-section a p{
 	font-size: .7rem;
-	margin-top: .55rem;
-	font-weight: 500;
+	text-transform: uppercase;
+	font-weight: 400;
 	color: #f38b15;
 }
 .latest-blog-text-section a{
@@ -1399,6 +1397,7 @@ footer {
 /* -----------------------Author Section Start-------------------------------- */
 .author-section{
 	height: 26rem;
+	background-color: #e9f3f5;
 }
 .author-section-container{
 	margin-left: 15rem;
@@ -1430,7 +1429,8 @@ footer {
 
 
 .author-text a button {
-	padding: 0.7rem 1.3rem;
+	height: 2rem;
+	width: 6rem;
 	color: white;
 	background-color: #00aeef;
 	border: none;
@@ -1438,11 +1438,10 @@ footer {
 	cursor: pointer;
 	margin-top: 1rem;
 	font-size: .5rem;
-	transition: all .5s linear;
+	transition: all 300ms linear;
 }
 
 .author-text a button:hover {
-	padding: 0.6rem 1.2rem;
 	color: #00aeef;
 	background-color: transparent;
 	border: 0.1rem #00aeef solid;
