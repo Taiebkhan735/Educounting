@@ -17,7 +17,7 @@
 				<div class="nav-bar-main-content">
 					<a id="nav-items" href="#"><img class="nav-img1" src="images/newicon.png"/></a>
 					<div id="nav-items" class="nav-content">
-						<ul>
+						<ul id="menuList">
 							<li><a href="#">Podcast</a></li>
 							<li><a href="#">Video</a></li>
 							<li><a href="index.html">Home</a></li>
@@ -25,8 +25,8 @@
 							<li><a href="#">Contact</a></li>
 						</ul>
 					</div>
-					<div>
-						<button><a href="/"></a></button>
+					<div class="menupng">
+						<a href="#"><i class="fa-solid fa-bars" onclick="togglemenu()"></i></a>
 					</div>
 					<div id="nav-items" class="nav-btn">
 						<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -459,5 +459,20 @@ One great way to contribute to charities while leaving your cash in place is by 
 			<!----------------------- Privacy and Policy end --------------------------------->
 		</footer>
 		<!----------------------- Footer section end --------------------------------->
+
+
+		<script>
+			var menuList = document.getElementById("menuList");
+			menuList.style.maxHeight= "0px";
+			function togglemenu(){
+				if(menuList.style.maxHeight == "0px"){
+					menuList.style.maxHeight= "130px";
+				}else{
+					menuList.style.maxHeight= "0px";
+				}
+			}
+		</script>
+
+
 	</body>
 </html>
