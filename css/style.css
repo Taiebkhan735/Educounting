@@ -1279,6 +1279,12 @@ footer {
 	.nav-content ul li a {
 		color: #fba300;
 	}
+
+	.section-1-text-container {
+		background-color: #daebf1;
+		width: 30rem;
+		height: 25rem;
+	}
 }
 
 /* -----------------------Mobile Query end --------------------------------- */
