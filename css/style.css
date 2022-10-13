@@ -1445,9 +1445,9 @@ footer {
 }
 
 .section-3-ptag-1 {
-	height: 4rem;
+	height: 3rem;
 	width: 17rem;
-	padding: 1rem;
+	padding: 0.4rem;
 	background-color: rgb(215, 249, 214);
 	position: relative;
 	bottom: 22.3rem;
@@ -1474,8 +1474,8 @@ footer {
 
 .section-3-box1 {
 	position: relative;
-	top: 4.8rem;
-	left: 5.8rem;
+	top: 4.6rem;
+	left: 5.6rem;
 	background-color: #35bd24;
 }
 
@@ -1652,9 +1652,141 @@ footer {
 
 /*------------------------------------------- Video section start-------------------------------- */
 
-
-
+.video-section_con {
+	width: 26.7rem;
+  }
+  .thumbnail a img {
+	width: 26.8rem;
+	position: relative;
+	bottom: .2rem;
+	left: .1rem;
+  }
+  .section-7-all-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 20rem;
+	gap: 2rem;
+  }
+  .section-7-card-main-container {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+  }
 /*------------------------------------------- Video section end-------------------------------- */
+
+
+/*-------------------------------------------section 8 start-------------------------------- */
+.section-8 {
+	max-width: 91.875rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 5rem;
+	margin-left: 0;
+	margin-right: 0;
+	box-sizing: border-box;
+  }
+  .section-8 h1 {
+	max-width: 20rem;
+	font-size: 2rem;
+  }
+  .logo-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+	gap: 2rem;
+	max-width: 26.7rem;
+  }
+  .logo-container img {
+	width: 5rem;
+	transition: all 500ms linear;
+	cursor: pointer;
+  }
+/*-------------------------------------------section 8 end-------------------------------- */
+
+
+
+/*-------------------------------------------section 9 start-------------------------------- */
+.text-section-9 {
+	height: 6rem;
+	margin-left: 0.5rem;
+	width: 15rem;
+  }
+  .section-9 {
+	max-width: 44.7rem;
+	background: #f38b15;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-left: 0;
+	margin-right: 0;
+  }
+  .section-9-main-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 43rem;
+}
+  .section-9-input {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-right: 0;
+  }
+  .section-9-input input {
+	font-size: .6rem;
+	width: 17rem;
+	height: 3rem;
+	padding-left: 2rem;
+	outline: none;
+	border: none;
+	margin-right: 5.5rem;
+  }
+
+  .s-btn {
+	color: #010101;
+	background-color: transparent;
+	border: 0.1rem #4dc8b6 solid;
+	border-radius: 1rem;
+	cursor: pointer;
+	position: relative;
+	left: 16rem;
+	width: 6rem;
+	height: 2rem;
+	font-size: 0.5rem;
+  }
+/*-------------------------------------------section 9 end-------------------------------- */
+
+
+/*-------------------------------------------Footer section start-------------------------------- */
+
+.footer_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 9rem;
+	padding-top: 5rem;
+	height: 18rem;
+  }
+
+
+/*-------------------------------------------Footer section end-------------------------------- */
+
+
+
 
 
 
