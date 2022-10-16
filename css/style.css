@@ -229,8 +229,8 @@ p {
 
 .section-1-text-container {
 	background-color: #daebf1;
-	width: 30rem;
-	height: 25rem;
+	max-width: 30rem;
+	padding-bottom: 10rem;
 }
 
 .section-1-text h1 {
@@ -278,7 +278,7 @@ p {
 	background: linear-gradient(rgba(16, 72, 83, 0.716),
 			rgba(3, 38, 39, 0.526)),
 		url(../images/section-2.jpg);
-	height: 25rem;
+	max-height: 25rem;
 	background-repeat: no-repeat;
 	margin-bottom: 5rem;
 	display: flex;
@@ -503,14 +503,14 @@ p {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .section-4-card-container {
 	flex-basis: 27%;
 	max-height: 26rem;
 	max-width: 17.4rem;
-	margin: 1rem 1rem;
+	margin: 1rem 0;
 	background-color: white;
 	box-shadow: .2rem .1rem .6rem .1rem #d7d7d7;
 	transition: all 500ms linear;
@@ -686,30 +686,39 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: auto;
 	width: 91.875rem;
 }
 
 .section-6-card-container {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.section-6-card-text {
 	margin: 1rem 1rem;
 	background-color: white;
 	box-shadow: .2rem .1rem .6rem .1rem #d7d7d7;
+	flex-basis: 29%;
+	max-width: 18.7rem;
 	transition: all 500ms linear;
 	cursor: pointer;
 }
 
-.section-6-card-container:hover {
+.section-6-card-text:hover {
 	transform: translateY(-5%);
 }
 
-.section-6-card-text {
-	max-height: 29rem;
-	max-width: 18.7rem;
-
+.section-6-all-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 70rem;
 }
 
+
 .section-6-card-text img {
-	max-height: 15rem;
 	max-width: 18.7rem;
 }
 
@@ -750,12 +759,6 @@ p {
 	border-radius: 1rem;
 }
 
-.section-6-all-card {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	max-width: 60rem;
-}
 
 .section-6-card-text a {
 	display: flex;
@@ -972,7 +975,7 @@ div#seekObj1 {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	
+
 
 }
 
@@ -983,7 +986,7 @@ div#seekObj1 {
 	align-items: center;
 	width: 60rem;
 	background: #f38b15;
-  }
+}
 
 .text-section-9 {
 	max-height: 6rem;
@@ -1019,14 +1022,16 @@ div#seekObj1 {
 }
 
 .s-btn {
-	padding: 0.6rem 1.9rem;
-	color: #010101;
-	background-color: transparent;
-	border: 0.1rem #4dc8b6 solid;
-	border-radius: 1rem;
-	cursor: pointer;
-	position: relative;
-	left: 28rem;
+		color: #010101;
+		background-color: transparent;
+		border: 0.1rem #4dc8b6 solid;
+		border-radius: 1rem;
+		cursor: pointer;
+		position: relative;
+		left: 28rem;
+		width: 6rem;
+		height: 2rem;
+		font-size: 0.5rem;
 }
 
 .s-btn:hover {
@@ -1059,9 +1064,9 @@ footer {
 	flex-direction: row;
 	justify-content: center;
 	align-items: flex-start;
-	gap: 9rem;
-	padding-top: 5rem;
-	height: 30rem;
+	gap: 3rem;
+	padding: 9rem 5rem;
+	max-height: 30rem;
 }
 
 .footer-logo {
@@ -1235,8 +1240,6 @@ footer {
 		justify-content: center;
 		align-items: center;
 		background-image: none;
-
-
 	}
 
 	.nav-bar {
@@ -1316,6 +1319,10 @@ footer {
 		align-items: center;
 	}
 
+	.header button {
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
+	}
 	.header h1 {
 		font-size: 2rem;
 		margin-bottom: 1rem;
@@ -1361,27 +1368,38 @@ footer {
 		margin-top: 4rem;
 		margin-bottom: 4rem;
 	}
-
+	.section-1-text {
+		margin-left: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	.section-1-text-container {
 		background-color: #daebf1;
 		max-width: 30rem;
-		max-height: 17rem;
+		padding-bottom: 4rem;
 	}
 
 	.section-1-container {
 		width: 30rem;
 		height: 25rem;
 	}
+	.section-1-text p {
+		font-size: 0.8rem;
+		margin-bottom: 2rem;
+		margin-top: 0rem;
+	  }
 
 	.section-1-text-container a button {
-		padding: .5rem .9rem;
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
 		border-radius: 1.5rem;
 		background-color: #f38b15;
 		color: white;
 		transition: all 300ms linear;
 		cursor: pointer;
 		border: .1rem #f38b15 solid;
-		font-size: .7rem;
 	}
 
 	/*------------------------------------------- section 1 end-------------------------------- */
@@ -1390,13 +1408,16 @@ footer {
 		max-width: 100%;
 		background: linear-gradient(rgba(16, 72, 83, 0.716), rgba(3, 38, 39, 0.526)), url(../images/section-2.jpg);
 		background-repeat: repeat, repeat;
+		background-repeat: repeat, repeat;
 		background-repeat: no-repeat;
-		margin-bottom: 5rem;
+		margin-bottom: 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 4rem;
+		padding-bottom: 4rem;
+		max-height: 37rem;
+		padding-top: 4rem;
 	}
 
 	.section-2 p {
@@ -1410,8 +1431,8 @@ footer {
 		border-radius: 1rem;
 		margin-top: 2rem;
 		margin-bottom: 5rem;
-		font-size: .7rem;
-		padding: 0.5rem .9rem;
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
 		border-radius: 1.5rem;
 		background-color: #f38b15;
 		color: white;
@@ -1557,7 +1578,19 @@ footer {
 		margin-top: 1.5rem;
 		margin-bottom: 3rem;
 	}
-
+	.sec-4-main-container a button {
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
+		border-radius: 1.5rem;
+		background-color: #f38b15;
+		color: white;
+		transition: all 300ms linear;
+		cursor: pointer;
+		border: .1rem #f38b15 solid;
+		cursor: pointer;
+		margin-top: 1.5rem;
+		margin-bottom: 2rem;
+	}
 	.section-4-all-card {
 		max-width: 23.6rem;
 		display: flex;
@@ -1584,17 +1617,20 @@ footer {
 	.section-4-card-text {
 		max-height: 100%;
 		max-width: 23.6rem;
-	  }
+	}
+
 	.section-4-card-text h4 {
 		margin: 1rem 1rem;
 		max-width: 23.6rem;
-	  }
-	  .section-4-card-text p {
+	}
+
+	.section-4-card-text p {
 		margin: 1rem;
 		color: #5d5d5d;
 		font-size: .7rem;
 		max-width: 25.7rem;
-	  }
+	}
+
 	/*------------------------------------------- section 4 end-------------------------------- */
 
 
@@ -1637,6 +1673,8 @@ footer {
 	.section-5-text-container a button {
 		margin-top: 3rem;
 		margin-left: 0;
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
 	}
 
 	/*------------------------------------------- section 5 end-------------------------------- */
@@ -1656,6 +1694,7 @@ footer {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		max-width: 25rem;
 	}
 
 	.section-6-card-text img {
@@ -1671,6 +1710,8 @@ footer {
 	.section-6-card-main-container a button {
 		margin-bottom: 6rem;
 		margin-top: 2.5rem;
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
 	}
 
 	/*------------------------------------------- Podcast section end-------------------------------- */
@@ -1697,6 +1738,7 @@ footer {
 		align-items: center;
 		height: auto;
 	}
+
 	.section-7-all-card {
 		display: flex;
 		flex-direction: row;
@@ -1705,9 +1747,14 @@ footer {
 		height: auto;
 		max-width: 23.6rem;
 	}
-	.video-section-card{
+
+	.video-section-card {
 		max-width: 23.6rem;
 		flex-basis: 55%;
+	}
+	.section-7-card-main-container a button {
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
 	}
 
 	/*------------------------------------------- Video section end-------------------------------- */
@@ -1755,7 +1802,8 @@ footer {
 	.text-section-9 {
 		height: 6rem;
 		margin-left: 0.5rem;
-		width: 15rem;
+		max-width: 21rem;
+		margin-bottom: 0;
 	}
 
 	.section-9 {
@@ -1774,7 +1822,7 @@ footer {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		max-width: 43rem;
+		max-width: 30rem;
 	}
 
 	.section-9-input {
@@ -1787,7 +1835,7 @@ footer {
 
 	.section-9-input input {
 		font-size: .6rem;
-		width: 17rem;
+		width: 22rem;
 		height: 3rem;
 		padding-left: 2rem;
 		outline: none;
@@ -1802,8 +1850,8 @@ footer {
 		border-radius: 1rem;
 		cursor: pointer;
 		position: relative;
-		left: 16rem;
-		width: 6rem;
+		left: 21rem;
+		width: 7rem;
 		height: 2rem;
 		font-size: 0.5rem;
 	}
@@ -1822,8 +1870,9 @@ footer {
 		flex-direction: row;
 		justify-content: center;
 		align-items: flex-start;
-		padding-top: 5rem;
 		max-height: 18rem;
+		gap: 4rem;
+		padding: 4rem 5rem;
 	}
 
 	.footer_sec-2 {
@@ -1847,9 +1896,10 @@ footer {
 	.footer_sec-3 {
 		margin-top: 0;
 	}
+
 	.footer-section {
 		padding: 0 1rem;
-	  }
+	}
 
 	.privacy-sec {
 		max-width: 100%;
@@ -1961,6 +2011,18 @@ footer {
 		margin-left: 2rem;
 	}
 
+	.header button {
+		background-color: #f38b15;
+		border: .1rem #f38b15 solid;
+		color: white;
+		text-transform: uppercase;
+		border-radius: 1.6rem;
+		font-size: 0.5rem;
+		margin-top: 2rem;
+		padding: 0.6rem 2rem;
+		transition: all 300ms linear;
+		cursor: pointer;
+	  }
 	.header {
 		margin-top: 1rem;
 		margin-left: 0;
@@ -2111,8 +2173,8 @@ footer {
 		border-radius: 1rem;
 		margin-top: 2rem;
 		margin-bottom: 5rem;
-		font-size: .7rem;
-		padding: 0.5rem .9rem;
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
 		border-radius: 1.5rem;
 		background-color: #f38b15;
 		color: white;
@@ -2217,7 +2279,8 @@ footer {
 	}
 
 	.section-3-main-tag a button {
-		padding: 0.5rem 1rem;
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
 		border-radius: 1.5rem;
 		background-color: #f38b15;
 		color: white;
@@ -2228,8 +2291,7 @@ footer {
 		position: relative;
 		bottom: 6.8rem;
 		right: 16rem;
-		font-size: .7rem;
-		width: 7rem;
+
 	}
 
 	/*------------------------------------------- section 3 end-------------------------------- */
@@ -2317,20 +2379,11 @@ footer {
 		color: #8a4c06;
 		font-size: .7rem;
 	}
-
-	.section-4-card-main-container a button {
-		padding: 0.6rem 1.5rem;
-		border-radius: 1.5rem;
-		background-color: #f38b15;
-		color: white;
-		transition: all 300ms linear;
-		cursor: pointer;
-		border: .1rem #f38b15 solid;
-		cursor: pointer;
-		margin-top: 1.5rem;
-		margin-bottom: 2rem;
+	.sec-4-main-container a button {
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
 	}
-
+	
 	/*------------------------------------------- section 4 end-------------------------------- */
 
 
@@ -2375,6 +2428,8 @@ footer {
 	}
 
 	.section-5-text-container a button {
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
 		margin-top: 3rem;
 		margin-left: 0;
 	}
@@ -2393,25 +2448,35 @@ footer {
 
 	.section-6-all-card {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 70rem;
+
 	}
 
 	.section-6-card-container {
-		flex-basis: 23%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
 		margin: .9rem 0;
-		max-width: 20.4rem;
+		max-width: 70rem;
+		/* max-height: 30rem; */
+	}
+
+	.section-6-card-text {
+		flex-basis: 23%;
 		max-height: 30rem;
-	  }
+		max-width: 20.4rem;
+		margin: 1rem .5rem;
+	}
+
 	.section-6-card-main-container {
 		margin-top: 3rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: auto;
 		max-width: 100%;
 	}
 
@@ -2419,12 +2484,10 @@ footer {
 		max-width: 20.4rem;
 	}
 
-	.section-6-card-text {
-		max-height: 30rem;
-		max-width: 20.4rem;
-	  }
 
 	.section-6-card-main-container a button {
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
 		margin-bottom: 6rem;
 		margin-top: 2.5rem;
 	}
@@ -2439,14 +2502,17 @@ footer {
 	.video-section_con {
 		max-width: 100%;
 	}
-	.video-section-card-body{
+
+	.video-section-card-body {
 		max-width: 100%;
 	}
-	.thumbnail{
+
+	.thumbnail {
 		max-height: 26rem;
 		max-width: 100%;
 		margin-bottom: 0;
 	}
+
 	.thumbnail a img {
 		max-width: 20rem;
 		position: relative;
@@ -2465,15 +2531,17 @@ footer {
 		height: auto;
 		width: auto;
 	}
+
 	.section-7-card-main-container a button {
-		padding: 0.7rem 2rem;
+		font-size: .5rem;
+		padding: 0.5rem 1.5rem;
 		color: white;
 		background-color: #f38b15;
 		border: none;
 		border-radius: 1rem;
 		cursor: pointer;
 		margin-top: 4.5rem;
-	  }
+	}
 
 	.section-7-all-card {
 		display: flex;
@@ -2484,17 +2552,19 @@ footer {
 		max-width: 60rem;
 		gap: 1rem;
 		max-height: auto;
-	  }
-	.video-section-card{
+	}
+
+	.video-section-card {
 		flex-basis: 45%;
 		padding-bottom: 1rem;
 		max-width: 20rem;
 	}
+
 	.video-card-text {
 		font-size: .7rem;
-		margin:1rem 1rem;
+		margin: 1rem 1rem;
 		color: #000000;
-	  }
+	}
 
 	/*------------------------------------------- Video section end-------------------------------- */
 
@@ -2542,7 +2612,7 @@ footer {
 		max-height: 6rem;
 		margin-left: 0.5rem;
 		max-width: 18rem;
-	  }
+	}
 
 	.section-9 {
 		max-width: 100%;
@@ -2589,7 +2659,7 @@ footer {
 		cursor: pointer;
 		position: relative;
 		left: 24rem;
-		width: 6rem;
+		width: 7rem;
 		height: 2rem;
 		font-size: 0.5rem;
 	}
