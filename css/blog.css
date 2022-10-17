@@ -10,7 +10,7 @@
 }
 
 body {
-	width: 91.875rem;
+	
 	overflow-x: hidden;
 	font-family: 'Roboto', sans-serif;
 }
@@ -131,7 +131,7 @@ p{
 	padding-bottom: 5rem;
 	padding-top: 4rem;
 }
-.blog-header-text{
+.blog-header-text {
 	background: white;
 	padding-top: 2rem;
 	padding-left: 2rem;
@@ -139,9 +139,9 @@ p{
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	height: 20rem;
-	width: 38.6rem;
-}
+	/* max-height: 20rem; */
+	max-width: 38.6rem;
+  }
 
 .blog-header-author span{
 	color: #f38b15;
@@ -149,6 +149,9 @@ p{
 	margin-left: .4rem;
 }
 
+.blog-header-img-mobile{
+	display: none;
+}
 .blog-header-img img{
 	width: 23.25rem;
 	height: 20rem;
@@ -335,8 +338,9 @@ p{
 
 /* -----------------------Author Section Start-------------------------------- */
 .author-section{
-	height: 26rem;
+	max-height: 40rem;
 	background-color: #e9f3f5;
+	padding-bottom: 2rem;
 }
 .author-section-container{
 	margin-left: 15rem;
@@ -365,19 +369,21 @@ p{
 	font-size: .7rem;
 }
 
-
+.author-text a{
+	padding-bottom: 2rem;
+}
 
 .author-text a button {
-	height: 2rem;
-	width: 6rem;
-	color: white;
 	background-color: #00aeef;
-	border: none;
+	border: .1rem #00aeef solid;
 	border-radius: 1rem;
-	cursor: pointer;
+	color: white;
+	text-transform: capitalize;
+	font-size: 0.6rem;
 	margin-top: 1rem;
-	font-size: .5rem;
+	padding: 0.5rem 1rem;
 	transition: all 300ms linear;
+	cursor: pointer;
 }
 
 .author-text a button:hover {
@@ -411,15 +417,15 @@ p{
 }
 
 .search-section button {
-	background-color: #f38b15;
-	border: .1rem #f38b15 solid;
-	color: white;
-	text-transform: uppercase;
-	font-size: 0.6rem;
-	margin-top: 1rem;
-	padding: 0.7rem 2rem;
-	transition: all 300ms linear;
-	cursor: pointer;
+		background-color: #f38b15;
+		border: .1rem #f38b15 solid;
+		color: white;
+		text-transform: uppercase;
+		font-size: 0.6rem;
+		margin-top: 1rem;
+		padding: 0.7rem 2rem;
+		transition: all 300ms linear;
+		cursor: pointer;
 }
 
 .search-section button:hover {
@@ -516,7 +522,7 @@ p{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	width: 90rem;
+	max-width: 90rem;
 }
 
 /* -----------------------Related Post Section End--------------------------------- */
@@ -685,3 +691,213 @@ footer {
 
 
 /* -----------------------Privacy section end --------------------------------- */
+
+
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) {
+	html {
+		font-size: 90%;
+	}
+
+
+}
+@media all and (max-width: 600px) {
+	html {
+		font-size: 80%;
+	}
+
+	body {
+		overflow-x: hidden;
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	/* -----------------------Header Section--------------------------------- */
+	.nav-bar-main-content .nav-btn{
+		display: none;
+	}
+	.nav-bar-main-content .nav-content{
+		display: none;
+	}
+	.nav-bar {
+		height: 6rem;
+		background-color: transparent;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 1.5rem;
+	}
+	.blog-header-main {
+		background: rgb(241, 248, 234);
+		max-width: 47rem;
+	  }
+	.blog-header-child-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 3rem;
+		padding-bottom: 5rem;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.blog-header-child-container #header-content{
+		flex-basis: 45%;
+		max-width: 22rem;
+		max-height: 14rem;
+		padding: 1rem;
+		padding-right: 1rem;
+	}
+	.blog-header-text {
+		padding-top: 2rem;
+		max-height: 15rem;
+		width: auto;
+	}
+	
+	.blog-header-text, .blog-header-img{
+	}
+	.blog-header-text p {
+		font-size: 1.5rem;
+		font-weight: 600;
+		padding-bottom: 3rem;
+		padding-top: 0rem;
+		width: 18rem;
+	}
+	.blog-header-img-mobile{
+		display: contents;
+	}
+	.blog-header-img-mobile img {
+		width: 20rem;
+		max-height: 14rem;
+	}
+	.blog-header-img {
+		display: none;
+	}
+
+	.header-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+/* -----------------------Header Section end--------------------------------- */
+
+/* ------------------------------blog Section start--------------------------------- */
+
+/* -----------------------Table Of Content Section Start--------------------------------- */
+
+.blog-section-DDmenu{
+	display: none;
+}
+/* -----------------------Table Of Content Section End--------------------------------- */
+.Blog-section-1 {
+	max-width: 45rem;
+	margin-left: 0;
+	margin-right: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  }
+  Blog-section-1 .all-blog {
+	width: 100%;
+	padding-right: 3rem;
+	margin-top: 3rem;
+  }
+  .all-blog p {
+	font-size: 1rem;
+	padding: .5rem 3rem;
+  }
+  .all-blog img {
+	width: 88%;
+	max-height: 18rem;
+	margin: 2rem 3rem;
+  }
+  .social-icon {
+	margin: 2rem 3rem;
+  }
+
+/* ------------------------------blog Section End--------------------------------- */
+
+
+
+/*  --------------------Author Section Start---------------------------  */
+
+  .author-section{
+	max-width: 100%;
+	max-height: 40rem;
+	background-color: #e9f3f5;
+	padding-bottom: .1rem;
+}
+  .author-section-container {
+	margin:1rem 3rem;
+  }
+  .author-text {
+	margin-left: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+  }
+  .about-aauthor {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 2rem;
+  }
+  .author-text a button {
+	background-color: #00aeef;
+	border: .1rem #00aeef solid;
+	border-radius: 1rem;
+	color: white;
+	text-transform: capitalize;
+	font-size: 0.5rem;
+	margin-top: 1rem;
+	padding: 0.4rem .7rem;
+	transition: all 300ms linear;
+	cursor: pointer;
+  }
+  .author-text a {
+	text-align: center;
+	margin-left: 0;
+	width: 100%;
+  }
+  .search-section button {
+	background-color: #f38b15;
+	border: .1rem #f38b15 solid;
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.5rem;
+	margin-top: 1rem;
+	padding: 0.4rem .7rem;
+	transition: all 300ms linear;
+	cursor: pointer;
+  }
+/*  --------------------Author Section End---------------------------  */
+
+.related-post-section {
+	max-width: 100%;
+  }
+  .related-post-card-main-container {
+	height: auto;
+  }
+  .related-post-all-card {
+	max-width: 47rem;
+	flex-wrap: wrap;
+  }
+  .related-post-card-container {
+	flex-basis: 55%;
+	max-width: 20.7rem;
+	max-height: 25rem;
+  }
+  .related-post-card-text img {
+	width: 20.7rem;
+  }
+  .related-post-card-text_container {
+	width: 20.7rem;
+	height: 8rem;
+  }
+  .related-post-card-text p {
+	margin: 0 1rem;
+  }
+
+
+
+
+}
