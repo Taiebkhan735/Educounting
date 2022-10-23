@@ -876,7 +876,7 @@ footer {
 	}
 
 	.author-section-container {
-		margin: 1rem 3rem;
+		margin: 1rem 7rem;
 	}
 
 	.author-text {
@@ -1084,9 +1084,6 @@ footer {
 		max-height: 15rem;
 		width: auto;
 	}
-
-	.blog-header-text,
-	.blog-header-img {}
 
 	.blog-header-text p {
 		font-size: 1.5rem;
